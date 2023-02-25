@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+}
+.navbar {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(199, 194, 194);
+}
+.navbar img{
+    width: 150px;
+    margin-left: 10px;
+}
+.search img {
+    width: 20px;
+    margin: 0 15px;
+}
+.navleft {
+    width: 44%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.search {
+    width: 400px;
+    height: 45px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.search input {
+    width: 100%;
+    height: 40px;
+    border: none;
+}
+.navright {
+    width: 44%;
+    height: 75px;
+    /* border: 1px solid black; */
+}
+.menu{
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+.menufirst{
+    width: 33%;
+    height: 40px;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+.menufirst a:hover {
+    color: #f43397;
+}
+.menufirst:hover {
+    border-bottom: 2px solid #f43397;
+}
+.menucenter a:hover {
+    color: #f43397;
+}
+.menucenter:hover {
+    border-bottom: 2px solid #f43397;
+}
+.menulast a:hover {
+    color: #f43397;
+}
+.menulast:hover {
+    border-bottom: 2px solid #f43397;
+}
+.menucenter{
+    width: 33%;
+    height: 40px;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menulast{
+    width: 34%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menulast img {
+    width: 20px;
+}
+.menufirst img {
+    width: 30px;
+}
+.prof {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.search input::placeholder{
+    color: #f43397;
+    font-size: 12px;
+}

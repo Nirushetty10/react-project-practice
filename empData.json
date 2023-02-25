@@ -1,0 +1,27 @@
+[
+    {
+        "emp_name" : "Sam",
+        "emp_img" : "https://www.mrdustbin.com/en/wp-content/uploads/2021/05/dwayne-johnson.jpg" ,
+        "emp_designation" : "developer",
+        "emo_sal" : 400000,
+        "emp_skills" : ["react", "node", "express"], 
+        "emp_city" : "bangalore"
+    },
+    {
+        "emp_name" : "John",
+        "emp_img" : "https://www.mrdustbin.com/en/wp-content/uploads/2021/05/leonardo-dicaprio-853x1024.jpg" ,
+        "emp_designation" : "Test engineer",
+        "emo_sal" : 300000,
+        "emp_skills" : ["manual", "atman", "java"], 
+        "emp_city" : "bangalore"
+    },
+    {
+        "emp_name" : "Smith",
+        "emp_img" : "https://www.mrdustbin.com/en/wp-content/uploads/2021/05/chris-hemsworth.jpg" ,
+        "emp_designation" : "System engnr",
+        "emo_sal" : 350000,
+        "emp_skills" : ["aws", "devops", "java"], 
+        "emp_city" : "bangalore"
+    }
+
+]

@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.profile_section {
+    width: 100%;
+    height: 100vh;
+    background-color: black ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    width: 50%;
+    height: 70%;
+    background-color: #fff;
+    border: 5px solid tomato;
+    border-radius: 5px;
+    display: flex;
+}
+.left {
+    width: 40%;
+    background-color: rgb(233, 223, 223);
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+    position: relative;
+}
+.left img {
+    width: 80%;
+    height: 200px;
+    margin-top: 15px;
+    border: 7px solid #fff;
+    border-radius: 50%;
+}
+.right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-left: 25px;
+    padding-top: 20px;
+}
+.activity {
+    width: 60%;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    position: absolute;
+    bottom: 80px;
+    background-color: darkslategray;
+    color: white;
+}
+.profile {
+    width: 60%;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    position: absolute;
+    bottom: 120px;
+    background-color: darkslategray;
+    color: white;
+}
+.empdetails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.right h1 {
+    color: cornflowerblue;
+}
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 30px 30px;
+    gap: 10px;
+}
+.skills > div {
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(62, 104, 105);
+    background-color: burlywood;
+}

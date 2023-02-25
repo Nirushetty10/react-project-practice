@@ -1,0 +1,26 @@
+[
+    {
+        "emp_id" : "1456",
+        "emp_name":"Lucy Spencer",
+        "designation" : "Account manager",
+        "report_to" : "Walter Brown",
+        "company" : "Acne Business",
+        "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmKG5qY-_99zASOnmLYwmqaqH2Sqml6y_tE-GU2sgp2HsRgXPj656Uo_uiEsENU1GuqBg&usqp=CAU",
+        "email" : "lucy.spensor@gmail.com",
+        "phoneNumber" : "9876543210",
+        "loc": "london",
+        "skills" : ["budgeting","relationship building", "communication","conflict resolution", "accounts"]
+    },
+    {
+        "emp_id" : "9876",
+        "emp_name":"dwayne johnson",
+        "designation" : "Developer",
+        "report_to" : "John cena",
+        "company" : "WWE",
+        "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Dwayne_Johnson_2014_%28cropped%29.jpg/640px-Dwayne_Johnson_2014_%28cropped%29.jpg",
+        "email" : "dwayne.wwe@gmail.com",
+        "phoneNumber" : "9856563210",
+        "loc": "Paris",
+        "skills" : ["Acting","Wrestling", "speaker","base ball", "karate"]
+    }
+]

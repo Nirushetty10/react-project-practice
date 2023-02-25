@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar {
+    background-color: #EAE0DA;
+    width: 85%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.menu ul {
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: #0081C9;
+}
+img {
+    margin-left: 50px;
+    width: 120px;
+}
