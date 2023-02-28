@@ -19,7 +19,7 @@ function Playpause() {
 
   return (
     <div>
-        <h1>hello</h1>
+        <h2></h2>
         <video src={video} ref={videoRef} onClick={handleChange}></video>
     </div>
   )
