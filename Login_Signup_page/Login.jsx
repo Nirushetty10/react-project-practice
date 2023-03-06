@@ -1,11 +1,13 @@
 import React,{useState} from 'react'
 import Card from './Card'
 import LOGIN from "./login.module.css"
+import { Link, useNavigate } from 'react-router-dom'
 
 
 function Login(props) {
   let [email, setemail] = useState("")
   let [password, setpassword] = useState("")
+  let navigate = useNavigate()
 
   let emailHandler =(e)=>{
      setemail(e.target.value)
@@ -15,11 +17,15 @@ function Login(props) {
  }
  let submitHandler =(e)=>{
   e.preventDefault()
-    props.onLogin({email, password})
+    let localemail = localStorage.getItem("email")
+    let localpassword = localStorage.getItem("password")
+    if(email=== localemail && password=== localpassword) {
+      navigate("/")
+    }
  }
   return (
-    <>
-        <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="" />
+    <div className={LOGIN.body}>
+        <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="" width={"250px"}/>
         <form action="" onSubmit={submitHandler}>
         <Card className={LOGIN.parent_box}>
             <h1>Log in to Facebook</h1>
@@ -28,11 +34,11 @@ function Login(props) {
             <button type="submit">LOG IN</button>
             <div className={LOGIN.anchor}>
                 <a href="#">Forgotten account?</a>
-                <a href="#">Sign up for Facebook</a>
+                <Link to="/signin">Sign up for Facebook</Link>
             </div>       
         </Card>
         </form>
-    </>
+    </div>
   )
 }
 

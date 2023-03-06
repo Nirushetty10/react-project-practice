@@ -1,10 +1,13 @@
 import React, {useState} from 'react'
 import Card from './Card'
 import LOGIN from "./login.module.css"
+import { Link, useNavigate } from 'react-router-dom'
 
 function Signin(props) {
   let [email, setemail] = useState("")
   let [password, setpassword] = useState("")
+
+  let navigate = useNavigate()
 
   let emailHandler =(e)=>{
      setemail(e.target.value)
@@ -14,12 +17,19 @@ function Signin(props) {
  }
  let submitHandler =(e)=>{
   e.preventDefault()
-    props.onDetails({email, password})
+  if(email.includes("@") && password.length>6) {
+  localStorage.setItem("email", email)
+  localStorage.setItem("password", password)
+  navigate("/login")
+  } else {
+    window.alert("Invalid")
+    navigate("/signin")
+  }
  }
 
   return (
-    <>
-        <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="" />
+    <div className={LOGIN.body}>
+        <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="" width={"250px"}/>
         <form action="" onSubmit={submitHandler}>
         <Card className={LOGIN.parent_box}>
             <h2>Welcome to facebook</h2>
@@ -28,12 +38,12 @@ function Signin(props) {
             <input type="password" name="" id="" placeholder='Password' onChange={passwordHandler}/>
             <button type="submit">Sign Up</button>
             <div className={LOGIN.anchor}>
-                <a href="#">Forgotten account?</a>
-                <a href="#">Sign up for Facebook</a>
+                <a>Already have an account?</a>
+                <Link to="/login">Login to your Account</Link>
             </div>       
         </Card>
         </form>
-    </>
+    </div>
   )
 }
 
